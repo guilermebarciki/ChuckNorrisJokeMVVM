@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D227A08501895E2AEA6755D /* libPods-ChuckNorrisJokeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B40F023ACD0D51DB83A77E1 /* libPods-ChuckNorrisJokeApp.a */; };
+		B2760067278D008800221ECA /* CategoriesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2760066278D008800221ECA /* CategoriesViewModelProtocol.swift */; };
+		B2760069278D014F00221ECA /* CategorieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2760068278D014F00221ECA /* CategorieViewModel.swift */; };
+		B276006C278DBB8600221ECA /* UITableView+Estensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276006B278DBB8600221ECA /* UITableView+Estensions.swift */; };
+		B2760075278DF0C800221ECA /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2760074278DF0C800221ECA /* JokeViewModel.swift */; };
+		B2760077278DF0E900221ECA /* JokeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2760076278DF0E900221ECA /* JokeViewModelProtocol.swift */; };
+		E80D5679275E6E7500AD4B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D5678275E6E7500AD4B60 /* AppDelegate.swift */; };
+		E80D567B275E6E7500AD4B60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D567A275E6E7500AD4B60 /* SceneDelegate.swift */; };
+		E80D567D275E6E7500AD4B60 /* CategoriesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D567C275E6E7500AD4B60 /* CategoriesScreenViewController.swift */; };
+		E80D5682275E6E7E00AD4B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80D5681275E6E7E00AD4B60 /* Assets.xcassets */; };
+		E80D5685275E6E7E00AD4B60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80D5683275E6E7E00AD4B60 /* LaunchScreen.storyboard */; };
+		E80D5693275E93C300AD4B60 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D5692275E93C300AD4B60 /* APIServices.swift */; };
+		E80D5695275EBC4000AD4B60 /* CategoriesScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E80D5694275EBC4000AD4B60 /* CategoriesScreenViewController.xib */; };
+		E80D569A275EBF1300AD4B60 /* JokeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D5699275EBF1300AD4B60 /* JokeScreenViewController.swift */; };
+		E80D569C275EBF2600AD4B60 /* JokeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E80D569B275EBF2600AD4B60 /* JokeScreenViewController.xib */; };
+		E80D56A1275EC2FD00AD4B60 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D569F275EC2FD00AD4B60 /* CategoriesTableViewCell.swift */; };
+		E80D56A2275EC2FD00AD4B60 /* CategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E80D56A0275EC2FD00AD4B60 /* CategoriesTableViewCell.xib */; };
+		E80D56A5275ED8A400AD4B60 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80D56A4275ED8A400AD4B60 /* JokeModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2573D1668E815CD211C9C05F /* Pods-ChuckNorrisJokeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisJokeApp.debug.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisJokeApp/Pods-ChuckNorrisJokeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3B40F023ACD0D51DB83A77E1 /* libPods-ChuckNorrisJokeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChuckNorrisJokeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2760066278D008800221ECA /* CategoriesViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModelProtocol.swift; sourceTree = "<group>"; };
+		B2760068278D014F00221ECA /* CategorieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieViewModel.swift; sourceTree = "<group>"; };
+		B276006B278DBB8600221ECA /* UITableView+Estensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Estensions.swift"; sourceTree = "<group>"; };
+		B2760074278DF0C800221ECA /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
+		B2760076278DF0E900221ECA /* JokeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModelProtocol.swift; sourceTree = "<group>"; };
+		E80D5675275E6E7500AD4B60 /* ChuckNorrisJokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisJokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80D5678275E6E7500AD4B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E80D567A275E6E7500AD4B60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E80D567C275E6E7500AD4B60 /* CategoriesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScreenViewController.swift; sourceTree = "<group>"; };
+		E80D5681275E6E7E00AD4B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E80D5684275E6E7E00AD4B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E80D5686275E6E7E00AD4B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80D5692275E93C300AD4B60 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		E80D5694275EBC4000AD4B60 /* CategoriesScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesScreenViewController.xib; sourceTree = "<group>"; };
+		E80D5699275EBF1300AD4B60 /* JokeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeScreenViewController.swift; sourceTree = "<group>"; };
+		E80D569B275EBF2600AD4B60 /* JokeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JokeScreenViewController.xib; sourceTree = "<group>"; };
+		E80D569F275EC2FD00AD4B60 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		E80D56A0275EC2FD00AD4B60 /* CategoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesTableViewCell.xib; sourceTree = "<group>"; };
+		E80D56A4275ED8A400AD4B60 /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		E8EBC3C089E7F46BC2536EF6 /* Pods-ChuckNorrisJokeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisJokeApp.release.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisJokeApp/Pods-ChuckNorrisJokeApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E80D5672275E6E7500AD4B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D227A08501895E2AEA6755D /* libPods-ChuckNorrisJokeApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86D69E36306B5E7EA801CB2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B40F023ACD0D51DB83A77E1 /* libPods-ChuckNorrisJokeApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99BE09DD015E98A7FA4901CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2573D1668E815CD211C9C05F /* Pods-ChuckNorrisJokeApp.debug.xcconfig */,
+				E8EBC3C089E7F46BC2536EF6 /* Pods-ChuckNorrisJokeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2760064278D004200221ECA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E80D569F275EC2FD00AD4B60 /* CategoriesTableViewCell.swift */,
+				E80D56A0275EC2FD00AD4B60 /* CategoriesTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B2760065278D006000221ECA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2760066278D008800221ECA /* CategoriesViewModelProtocol.swift */,
+				B2760068278D014F00221ECA /* CategorieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B276006A278DBB6500221ECA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B276006B278DBB8600221ECA /* UITableView+Estensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B276006D278DCBD900221ECA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B276006E278DCBE300221ECA /* Application */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B276006E278DCBE300221ECA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E80D5691275E939A00AD4B60 /* Services */,
+				B276006A278DBB6500221ECA /* Common */,
+				B2760071278DCC0F00221ECA /* Scenes */,
+				B2760070278DCBFB00221ECA /* SceneDelegate */,
+				B276006F278DCBEF00221ECA /* AppDelegate */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B276006F278DCBEF00221ECA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E80D5678275E6E7500AD4B60 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B2760070278DCBFB00221ECA /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E80D567A275E6E7500AD4B60 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		B2760071278DCC0F00221ECA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E80D5698275EBEFC00AD4B60 /* JokeScreen */,
+				E80D5697275EBEE000AD4B60 /* CategoriesScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B2760072278DCC5800221ECA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E80D569B275EBF2600AD4B60 /* JokeScreenViewController.xib */,
+				E80D5699275EBF1300AD4B60 /* JokeScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2760073278DCC6B00221ECA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2760074278DF0C800221ECA /* JokeViewModel.swift */,
+				B2760076278DF0E900221ECA /* JokeViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E80D566C275E6E7500AD4B60 = {
+			isa = PBXGroup;
+			children = (
+				E80D5677275E6E7500AD4B60 /* ChuckNorrisJokeApp */,
+				E80D5676275E6E7500AD4B60 /* Products */,
+				99BE09DD015E98A7FA4901CD /* Pods */,
+				86D69E36306B5E7EA801CB2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E80D5676275E6E7500AD4B60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E80D5675275E6E7500AD4B60 /* ChuckNorrisJokeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E80D5677275E6E7500AD4B60 /* ChuckNorrisJokeApp */ = {
+			isa = PBXGroup;
+			children = (
+				B276006D278DCBD900221ECA /* Source */,
+				E80D5681275E6E7E00AD4B60 /* Assets.xcassets */,
+				E80D5683275E6E7E00AD4B60 /* LaunchScreen.storyboard */,
+				E80D5686275E6E7E00AD4B60 /* Info.plist */,
+			);
+			path = ChuckNorrisJokeApp;
+			sourceTree = "<group>";
+		};
+		E80D5690275E938B00AD4B60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E80D56A4275ED8A400AD4B60 /* JokeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E80D5691275E939A00AD4B60 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E80D5692275E93C300AD4B60 /* APIServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E80D5697275EBEE000AD4B60 /* CategoriesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B2760065278D006000221ECA /* ViewModel */,
+				E80D56A3275EC6AC00AD4B60 /* View */,
+			);
+			path = CategoriesScreen;
+			sourceTree = "<group>";
+		};
+		E80D5698275EBEFC00AD4B60 /* JokeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B2760073278DCC6B00221ECA /* ViewModel */,
+				E80D5690275E938B00AD4B60 /* Model */,
+				B2760072278DCC5800221ECA /* View */,
+			);
+			path = JokeScreen;
+			sourceTree = "<group>";
+		};
+		E80D56A3275EC6AC00AD4B60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2760064278D004200221ECA /* Cell */,
+				E80D5694275EBC4000AD4B60 /* CategoriesScreenViewController.xib */,
+				E80D567C275E6E7500AD4B60 /* CategoriesScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E80D5674275E6E7500AD4B60 /* ChuckNorrisJokeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E80D5689275E6E7E00AD4B60 /* Build configuration list for PBXNativeTarget "ChuckNorrisJokeApp" */;
+			buildPhases = (
+				02CEC80C0339405D221DEA9A /* [CP] Check Pods Manifest.lock */,
+				E80D5671275E6E7500AD4B60 /* Sources */,
+				E80D5672275E6E7500AD4B60 /* Frameworks */,
+				E80D5673275E6E7500AD4B60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChuckNorrisJokeApp;
+			productName = ChuckNorrisJokeApp;
+			productReference = E80D5675275E6E7500AD4B60 /* ChuckNorrisJokeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E80D566D275E6E7500AD4B60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E80D5674275E6E7500AD4B60 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = E80D5670275E6E7500AD4B60 /* Build configuration list for PBXProject "ChuckNorrisJokeApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E80D566C275E6E7500AD4B60;
+			productRefGroup = E80D5676275E6E7500AD4B60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E80D5674275E6E7500AD4B60 /* ChuckNorrisJokeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E80D5673275E6E7500AD4B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80D5685275E6E7E00AD4B60 /* LaunchScreen.storyboard in Resources */,
+				E80D569C275EBF2600AD4B60 /* JokeScreenViewController.xib in Resources */,
+				E80D56A2275EC2FD00AD4B60 /* CategoriesTableViewCell.xib in Resources */,
+				E80D5695275EBC4000AD4B60 /* CategoriesScreenViewController.xib in Resources */,
+				E80D5682275E6E7E00AD4B60 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02CEC80C0339405D221DEA9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChuckNorrisJokeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E80D5671275E6E7500AD4B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80D567D275E6E7500AD4B60 /* CategoriesScreenViewController.swift in Sources */,
+				B2760077278DF0E900221ECA /* JokeViewModelProtocol.swift in Sources */,
+				E80D569A275EBF1300AD4B60 /* JokeScreenViewController.swift in Sources */,
+				E80D5679275E6E7500AD4B60 /* AppDelegate.swift in Sources */,
+				B2760067278D008800221ECA /* CategoriesViewModelProtocol.swift in Sources */,
+				B2760069278D014F00221ECA /* CategorieViewModel.swift in Sources */,
+				E80D56A5275ED8A400AD4B60 /* JokeModel.swift in Sources */,
+				B2760075278DF0C800221ECA /* JokeViewModel.swift in Sources */,
+				E80D567B275E6E7500AD4B60 /* SceneDelegate.swift in Sources */,
+				E80D56A1275EC2FD00AD4B60 /* CategoriesTableViewCell.swift in Sources */,
+				B276006C278DBB8600221ECA /* UITableView+Estensions.swift in Sources */,
+				E80D5693275E93C300AD4B60 /* APIServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E80D5683275E6E7E00AD4B60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E80D5684275E6E7E00AD4B60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E80D5687275E6E7E00AD4B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E80D5688275E6E7E00AD4B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E80D568A275E6E7E00AD4B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2573D1668E815CD211C9C05F /* Pods-ChuckNorrisJokeApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChuckNorrisJokeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = guilerme.br.com.ChuckNorrisJokeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E80D568B275E6E7E00AD4B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8EBC3C089E7F46BC2536EF6 /* Pods-ChuckNorrisJokeApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChuckNorrisJokeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = guilerme.br.com.ChuckNorrisJokeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E80D5670275E6E7500AD4B60 /* Build configuration list for PBXProject "ChuckNorrisJokeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80D5687275E6E7E00AD4B60 /* Debug */,
+				E80D5688275E6E7E00AD4B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E80D5689275E6E7E00AD4B60 /* Build configuration list for PBXNativeTarget "ChuckNorrisJokeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80D568A275E6E7E00AD4B60 /* Debug */,
+				E80D568B275E6E7E00AD4B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E80D566D275E6E7500AD4B60 /* Project object */;
+}
